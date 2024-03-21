@@ -1,84 +1,120 @@
 {
     "tasks": [
-    {
-      "id": 1,
-      "taskName": "Swimming",
-      "taskDetails": "Go for a swimming session at the local pool.",
-      "startTime": "2024-03-20T08:00:00",
-      "endTime": "2024-03-20T09:00:00",
-      "importance": "Low"
-    },
-    {
-      "id": 2,
-      "taskName": "Walking the Dog",
-      "taskDetails": "Take the dog for a walk around the neighborhood.",
-      "startTime": "2024-03-20T09:30:00",
-      "endTime": "2024-03-20T10:30:00",
-      "importance": "Low"
-    },
-    {
-      "id": 3,
-      "taskName": "Reading",
-      "taskDetails": "Read a chapter of a new book.",
-      "startTime": "2024-03-20T11:00:00",
-      "endTime": "2024-03-20T12:00:00",
-      "importance": "Low"
-    },
-    {
-      "id": 4,
-      "taskName": "Grocery Shopping",
-      "taskDetails": "Buy groceries for the week.",
-      "startTime": "2024-03-20T14:00:00",
-      "endTime": "2024-03-20T15:00:00",
-      "importance": "Medium"
-    },
-    {
-      "id": 5,
-      "taskName": "Cooking Dinner",
-      "taskDetails": "Prepare a healthy dinner for the family.",
-      "startTime": "2024-03-20T17:00:00",
-      "endTime": "2024-03-20T18:00:00",
-      "importance": "High"
-    },
-    {
-      "id": 6,
-      "taskName": "Watching a Movie",
-      "taskDetails": "Relax and watch a movie with popcorn.",
-      "startTime": "2024-03-20T20:00:00",
-      "endTime": "2024-03-20T22:00:00",
-      "importance": "Low"
-    },
-    {
-      "id": 7,
-      "taskName": "Exercise",
-      "taskDetails": "Do a workout session at home.",
-      "startTime": "2024-03-21T07:00:00",
-      "endTime": "2024-03-21T08:00:00",
-      "importance": "Medium"
-    },
-    {
-      "id": 8,
-      "taskName": "Cleaning the House",
-      "taskDetails": "Clean and organize the house.",
-      "startTime": "2024-03-21T10:00:00",
-      "endTime": "2024-03-21T12:00:00",
-      "importance": "Medium"
-    },
-    {
-      "id": 9,
-      "taskName": "Calling a Friend",
-      "taskDetails": "Catch up with a friend over the phone.",
-      "startTime": "2024-03-21T14:00:00",
-      "endTime": "2024-03-21T15:00:00",
-      "importance": "Low"
-    },
-    {
-      "id": 10,
-      "taskName": "Online Shopping",
-      "taskDetails": "Browse and purchase items online.",
-      "startTime": "2024-03-21T17:00:00",
-      "endTime": "2024-03-21T18:00:00",
-      "importance": "Low"
-    }
-  ]
-}
+
+      {
+        "id": 1,
+        "taskName": "Swimming",
+        "taskDetails": "Go for a swimming session at the local pool.",
+        "startDate": "2024-03-20",
+        "startTime": "08:00 AM",
+        "endDate": "2024-03-20",
+        "endTime": "09:00 AM",
+        "importance": "Low",
+        "status": "Complete"
+      },
+      {
+        "id": 2,
+        "taskName": "Walking the Dog",
+        "taskDetails": "Take the dog for a walk around the neighborhood.",
+        "startDate": "2024-03-20",
+        "startTime": "09:30 AM",
+        "endDate": "2024-03-20",
+        "endTime": "10:30 AM",
+        "importance": "Low",
+        "status": "Pending"
+      },
+      {
+        "id": 3,
+        "taskName": "Reading",
+        "taskDetails": "Read a chapter of a new book.",
+        "startDate": "2024-03-20",
+        "startTime": "11:00 AM",
+        "endDate": "2024-03-20",
+        "endTime": "12:00 PM",
+        "importance": "Low",
+        "status": "Complete"
+      },
+      {
+        "id": 4,
+        "taskName": "Grocery Shopping",
+        "taskDetails": "Buy groceries for the week.",
+        "startDate": "2024-03-20",
+        "startTime": "02:00 PM",
+        "endDate": "2024-03-20",
+        "endTime": "03:00 PM",
+        "importance": "Medium",
+        "status": "Pending"
+      },
+      {
+        "id": 5,
+        "taskName": "Cooking Dinner",
+        "taskDetails": "Prepare a healthy dinner for the family.",
+        "startDate": "2024-03-20",
+        "startTime": "05:00 PM",
+        "endDate": "2024-03-20",
+        "endTime": "06:00 PM",
+        "importance": "High",
+        "status": "Complete"
+      },
+      {
+        "id": 6,
+        "taskName": "Watching a Movie",
+        "taskDetails": "Relax and watch a movie with popcorn.",
+        "startDate": "2024-03-20",
+        "startTime": "08:00 PM",
+        "endDate": "2024-03-20",
+        "endTime": "10:00 PM",
+        "importance": "Low",
+        "status": "Complete"
+      },
+      {
+        "id": 7,
+        "taskName": "Exercise",
+        "taskDetails": "Do a workout session at home.",
+        "startDate": "2024-03-21",
+        "startTime": "07:00 AM",
+        "endDate": "2024-03-21",
+        "endTime": "08:00 AM",
+        "importance": "Medium",
+        "status": "Pending"
+      },
+      {
+        "id": 8,
+        "taskName": "Cleaning the House",
+        "taskDetails": "Clean and organize the house.",
+        "startDate": "2024-03-21",
+        "startTime": "10:00 AM",
+        "endDate": "2024-03-21",
+        "endTime": "12:00 PM",
+        "importance": "Medium",
+        "status": "Pending"
+      },
+      {
+        "id": 9,
+        "taskName": "Calling a Friend",
+        "taskDetails": "Catch up with a friend over the phone.",
+        "startDate": "2024-03-21",
+        "startTime": "02:00 PM",
+        "endDate": "2024-03-21",
+        "endTime": "03:00 PM",
+        "importance": "Low",
+        "status": "Complete"
+      },
+      {
+        "id": 10,
+        "taskName": "Online Shopping",
+        "taskDetails": "Browse and purchase items online.",
+        "startDate": "2024-03-21",
+        "startTime": "05:00 PM",
+        "endDate": "2024-03-21",
+        "endTime": "06:00 PM",
+        "importance": "Low",
+        "status": "Pending"
+      }
+    ]
+  }
+    
+
+  
+   
+

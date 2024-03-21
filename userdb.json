@@ -1,0 +1,29 @@
+{
+    "users": [
+      {
+        "name": "Alex Njoroge",
+        "email": "alex@example.com",
+        "password": "alex123",
+        "security_question": "What is your mother's maiden name?"
+      },
+      {
+        "name": "Hellen Cherotich",
+        "email": "hellen@example.com",
+        "password": "hellen456",
+        "security_question": "What is the name of your first pet?"
+      },
+      {
+        "name": "George Kiarie",
+        "email": "george@example.com",
+        "password": "george789",
+        "security_question": "What city were you born in?"
+      },
+      {
+        "name": "Cyrus Mureithi",
+        "email": "cyrus@example.com",
+        "password": "cyrusabc",
+        "security_question": "What is your favorite food?"
+      }
+    ]
+}
+    
