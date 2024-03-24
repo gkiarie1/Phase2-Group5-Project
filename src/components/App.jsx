@@ -108,7 +108,7 @@ function App() {
     setIsAuthenticated(false);
     // Clear user-related data from local storage or any other storage mechanism
     // Example: localStorage.clear();
-    return <Navigate to="/" />;
+    return <Navigate to="/task-list" />;
   };
 
   const handleDeleteTask = async (taskId) => {
