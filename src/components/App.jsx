@@ -10,6 +10,7 @@ import DeleteTask from './DeleteTask';
 import LogOut from './LogOut';
 import MyCalendar from './MyCalendar';
 import Reminder from './Reminder';
+import TaskDetails from './TaskDetails';
 
 function App() {
   const [tasks, setTasks] = useState([]);

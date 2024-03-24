@@ -1,4 +1,5 @@
 import React from 'react';
+
 import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
@@ -14,5 +15,19 @@ const AddButton = ({ onClick }) => {
 AddButton.propTypes = {
   onClick: PropTypes.func.isRequired,
 };
+
+export default AddButton;
+
+const AddButton = ({ onClick, text }) => {
+  return (
+    <button
+      onClick={onClick}
+      style={{ backgroundColor: 'green' }}
+      className='btn'
+    >
+      {text}
+    </button>
+  )
+}
 
 export default AddButton;
