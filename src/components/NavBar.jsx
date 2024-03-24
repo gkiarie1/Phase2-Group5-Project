@@ -3,9 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarAlt, faSearch, faUser, faBell } from '@fortawesome/free-solid-svg-icons'; 
 import SearchBar from './SearchBar';
 import MyCalendar from './MyCalendar';
-import LogIn from './LogIn';
 import Reminder from './Reminder'; 
-import SignUp from './SignUp';
 
 function NavBar({ onSearch }) {
   const [activeMenu, setActiveMenu] = useState(null);
@@ -33,7 +31,6 @@ function NavBar({ onSearch }) {
           <FontAwesomeIcon icon={faCalendarAlt} className="icon" title="Calendar" onClick={(e) => handleIconClick('calendar', e)} />
           <FontAwesomeIcon icon={faSearch} className="icon" title="Search" onClick={(e) => handleIconClick('search', e)} />
           <FontAwesomeIcon icon={faBell} className="icon" title="Reminder" onClick={(e) => handleIconClick('reminder', e)}/>
-          <FontAwesomeIcon icon={faUser} className="icon" title="Login" onClick={(e) => handleIconClick('login', e)} />
         </div>
       </nav>
       {activeMenu && (
@@ -41,8 +38,6 @@ function NavBar({ onSearch }) {
           {activeMenu === 'calendar' && <MyCalendar />}
           {activeMenu === 'search' && <SearchBar onSearch={onSearch} />}
           {activeMenu === 'reminder' && <Reminder />}
-          {activeMenu === 'login' && <LogIn />}
-          <SignUp />
           <button className="close-button" onClick={handleMenuClose}>Close</button>
         </div>
       )}
