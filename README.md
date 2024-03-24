@@ -15,23 +15,14 @@ To run the application locally, follow these steps:
 
 Clone the repository:
 bash
-Copy code
 git clone https://github.com/gkiarie1/Phase2-Group5-Project
 Navigate to the project directory:
 
 bash
-Copy code
 cd task-manager
-Install dependencies:
-
-Copy code
+Install dependencies
 npm install
 Run the application:
-
-sql
-Copy code
-npm start
-
 
 The project uses the following dependencies:
 
@@ -49,7 +40,7 @@ Contributing
 Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request.
 
 Credits
-This project was created by Cherotich Hellen, George Kiarie, Alex Njoroge and Cyrus Mureithi
+This project was created by Moringa School SDF)05 Group five with; Cherotich Hellen, George Kiarie, Alex Njoroge and Cyrus Mureithi
 
 License
 This project is licensed under the MIT License.
