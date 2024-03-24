@@ -5,3 +5,144 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+.tasks{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.task-container{
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 0 0 auto; 
+}
+
+.sidenav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #f1f1f1;
+  transition: left 0.3s ease; /* Transition for smooth animation */
+}
+
+.sidenav.expanded {
+  left: 0; /* Slide in when expanded */
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.icons-container {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.menu-container {
+  position: absolute;
+  top: calc(100% + 10px); /* Position below the navbar with 10px spacing */
+  left: 50%;
+  transform: translateX(-100%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1000; /* Ensure menu appears above other content */
+}
+
+.close-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: #555;
+}
+
+.create-task-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9); 
+  border-radius: 10px;
+  padding: 20px;
+  z-index: 1000; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+.create-task-modal h2 {
+  margin-top: 0;
+}
+
+.create-task-modal label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.create-task-modal input,
+.create-task-modal textarea,
+.create-task-modal select {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.create-task-modal button {
+  padding: 10px 20px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.create-task-modal button:hover {
+  background-color: #0056b3;
+}
+
+/* styles.css (or any other CSS file you are using) */
+
+.add-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
