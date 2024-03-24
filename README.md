@@ -1,5 +1,6 @@
 
 Task   Buddy
+
 Welcome to your favorite Task Management Application. The application allows users to manage their tasks, including creating new tasks, updating existing ones, marking tasks as completed, and deleting tasks. It also provides features such as authentication and task filtering.
 
 Features
