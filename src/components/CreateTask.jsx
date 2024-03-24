@@ -2,11 +2,22 @@ import React, { useState } from 'react';
 
 const CreateTask = ({ isOpen, onToggle, onCreate }) => {
   const [form, setForm] = useState({
+
+    taskName: '',
+    taskDetails: '',
+    startDate: '',
+    startTime: '',
+    endDate: '',
+    endTime: '',
+    importance: '',
+    status: 'Pending', 
+
     task: '',
     taskDetails: '',
     startTime: '',
     endTime: '',
     importance: '',
+
   });
 
   const handleChange = (event) => {
@@ -19,17 +30,25 @@ const CreateTask = ({ isOpen, onToggle, onCreate }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
 
+
+    if (!form.taskName || !form.startDate || !form.endDate || !form.taskDetails) {
+
     if (!form.task || !form.startTime || !form.endTime || !form.taskDetails) {
+
       alert('Please fill in all required fields');
       return;
     }
 
     const newTask = {
       ...form,
+
+      id: Date.now(), 
+
       id: Date.now(), // Generates a unique ID for the new task
       status: 'pending',
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
+
     };
 
     console.log('newTask:', newTask);
@@ -48,6 +67,19 @@ const CreateTask = ({ isOpen, onToggle, onCreate }) => {
           onCreate(newTask);
 
           setForm({
+
+            taskName: '',
+            taskDetails: '',
+            startDate: '',
+            startTime: '',
+            endDate: '',
+            endTime: '',
+            importance: '',
+            status: 'Pending',
+          });
+
+          onToggle(); 
+
             task: '',
             taskDetails: '',
             startTime: '',
@@ -56,6 +88,7 @@ const CreateTask = ({ isOpen, onToggle, onCreate }) => {
           });
 
           onToggle();
+
         } else {
           throw new Error('Failed to save task');
         }
@@ -67,26 +100,57 @@ const CreateTask = ({ isOpen, onToggle, onCreate }) => {
   };
 
   return (
+
+    <form className="create-task-modal" onSubmit={handleSubmit}>
+
     <form onSubmit={handleSubmit}>
+
       {isOpen && (
         <>
           <h2>Create Task</h2>
           <div>
+
+            <label htmlFor="taskName">Task Name:</label>
+            <input
+              id="taskName"
+              type="text"
+              name="taskName"
+              value={form.taskName}
+
             <label htmlFor="task">Task:</label>
             <input
               id="task"
               type="text"
               name="task"
               value={form.task}
+
               onChange={handleChange}
               required
             />
           </div>
           <div>
+
+            <label htmlFor="taskDetails">Task Details:</label>
+            <textarea
+              id="taskDetails"
+
             <label htmlFor="taskDetails">Task Details:</label><textarea
 id="taskDetails"
+
               name="taskDetails"
               value={form.taskDetails}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div>
+
+            <label htmlFor="startDate">Start Date:</label>
+            <input
+              id="startDate"
+              type="date"
+              name="startDate"
+              value={form.startDate}
               onChange={handleChange}
               required
             />
@@ -95,9 +159,27 @@ id="taskDetails"
             <label htmlFor="startTime">Start Time:</label>
             <input
               id="startTime"
+              type="time"
+
+            <label htmlFor="startTime">Start Time:</label>
+            <input
+              id="startTime"
               type="datetime-local"
+
               name="startTime"
               value={form.startTime}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div>
+
+            <label htmlFor="endDate">End Date:</label>
+            <input
+              id="endDate"
+              type="date"
+              name="endDate"
+              value={form.endDate}
               onChange={handleChange}
               required
             />
@@ -106,7 +188,13 @@ id="taskDetails"
             <label htmlFor="endTime">End Time:</label>
             <input
               id="endTime"
+              type="time"
+
+            <label htmlFor="endTime">End Time:</label>
+            <input
+              id="endTime"
               type="datetime-local"
+
               name="endTime"
               value={form.endTime}
               onChange={handleChange}
@@ -115,7 +203,16 @@ id="taskDetails"
           </div>
           <div>
             <label htmlFor="importance">Importance:</label>
+
+            <select
+              name="importance"
+              value={form.importance}
+              onChange={handleChange}
+              required
+            >
+
             <select name="importance" value={form.importance} onChange={handleChange} required>
+
               <option value=""></option>
               <option value="Low">Low</option>
               <option value="Medium">Medium</option>
@@ -125,6 +222,25 @@ id="taskDetails"
           <button
             type="submit"
             className="add-task-btn"
+
+            disabled={
+              !form.taskName ||
+              !form.startDate ||
+              !form.endDate ||
+              !form.taskDetails
+            }
+          >
+            {isOpen ? 'Save Task' : 'Add Task'}
+          </button>
+          <button type="button" onClick={onToggle}>Close</button>
+        </>
+      )}
+    </form>
+  );
+};
+
+export default CreateTask;
+
             disabled={!form.task || !form.startTime || !form.endTime || !form.taskDetails}
           >
             {isOpen ? 'Save Task' : 'Add Task'}
@@ -136,3 +252,4 @@ id="taskDetails"
 };
 
 export default CreateTask;
+
