@@ -36,7 +36,7 @@ function Login() {
         toggleView(); 
     };
 
-    if (success) { // If login is successful, render the App component
+    if (success) { 
         return <App />;
     }
 
