@@ -1,46 +1,59 @@
+# Task Manager
 
-Task   Buddy
+Task Manager is a web application designed to help users manage their tasks effectively. This project allows users to create, update, delete, and mark tasks as completed.
 
-Welcome to your favorite Task Management Application. The application allows users to manage their tasks, including creating new tasks, updating existing ones, marking tasks as completed, and deleting tasks. It also provides features such as authentication and task filtering.
+## About
 
-Features
-Task Management: Users can create, update, mark as completed, and delete tasks.
-Authentication: Users can log in to access the task management features.
-Task Filtering: Users can filter tasks based on importance and status.
-Calendar View: Users can view their tasks in a calendar format.
-Reminder: Users can set reminders for their tasks.
+Task Manager is a simple yet powerful tool for organizing tasks. It provides an intuitive user interface for managing tasks efficiently. Whether you're a student, professional, or anyone in need of task organization, Task Manager can help you stay on top of your responsibilities.
 
-Installation
-To run the application locally, follow these steps:
+## Features
 
-Clone the repository:
-bash
-git clone https://github.com/gkiarie1/Phase2-Group5-Project
-Navigate to the project directory:
+- Create tasks with details such as task name, description, start date, end date, importance, and status.
+- View a list of all tasks with filtering options based on importance and status.
+- Update existing tasks.
+- Mark tasks as completed.
+- Delete tasks.
 
-bash
-cd task-manager
-Install dependencies
-npm install
-Run the application:
+## Technologies Used
 
-The project uses the following dependencies:
+- React.js: Frontend framework for building the user interface.
+- JavaScript: Programming language used for client-side logic.
+- HTML/CSS: Markup and styling for the web application.
+- JSON Server: Lightweight mock REST API for managing tasks.
 
-•	React: JavaScript library for building user interfaces.
-•	React-router-dom: Routing library for React applications.
-•	useState and useEffect: React hooks for managing state and performing side effects.
-•	Fetch: API for making network requests.
-Usage
-Login: Users can log in using their credentials.
-Task Management: After logging in, users can create, update, mark as completed, and delete tasks.
-Task Filtering: Users can filter tasks based on importance and status.
-Calendar View: Users can view their tasks in a calendar format.
-Reminder: Users can set reminders for their tasks.
-Contributing
-Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request.
+## Getting Started
 
-Credits
-This project was created by Moringa School SDF)05 Group five with; Cherotich Hellen, George Kiarie, Alex Njoroge and Cyrus Mureithi
+To get a copy of this project up and running on your local machine, follow these steps:
 
-License
-This project is licensed under the MIT License.
+1. Clone the repository to your local machine: git clone https://github.com/gkiarie1/Phase2-Group5-Project.git
+
+2. Navigate to the project directory: cd Phase2-Group5-Project
+
+3. Install dependencies: npm install
+
+## Usage
+
+To start the development server and run the application, use the following command: npm start
+
+
+The application will be accessible at `http://localhost:3000` by default.
+
+## Deployment
+
+The application is deployed and accessible (https://phase2-group5-project-e1ui.vercel.app/).
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/YourFeature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin feature/YourFeature`)
+5. Create a new Pull Request
+
+Please ensure your code adheres to the existing code style and conventions.
+
+## License
+
+This project is licensed under the [MIT License].
