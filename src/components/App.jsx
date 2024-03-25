@@ -10,7 +10,6 @@ import DeleteTask from './DeleteTask';
 import LogOut from './LogOut';
 import MyCalendar from './MyCalendar';
 import Reminder from './Reminder';
-import TaskDetails from './TaskDetails';
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -107,8 +106,6 @@ function App() {
 
   const handleLogout = () => {
     setIsAuthenticated(false);
-    // Clear user-related data from local storage or any other storage mechanism
-    // Example: localStorage.clear();
     return <Navigate to="/task-list" />;
   };
 

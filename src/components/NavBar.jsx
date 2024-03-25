@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarAlt, faSearch, faUser, faBell } from '@fortawesome/free-solid-svg-icons'; 
+import { faCalendarAlt, faSearch, faBell } from '@fortawesome/free-solid-svg-icons'; 
 import SearchBar from './SearchBar';
 import MyCalendar from './MyCalendar';
 import Reminder from './Reminder'; 
